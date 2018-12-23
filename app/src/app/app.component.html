@@ -1,0 +1,20 @@
+<header>
+    <page-header (onSidebarToggle)="onSidebarToggle($event)"></page-header>
+</header>
+<div id="wrapper" class="container-fluid body-content" [ngClass]="showsidebar ? '' : 'toggled'">
+
+  <!-- Sidebar -->
+  <page-sidebar></page-sidebar>
+  <!-- /#sidebar-wrapper -->
+                
+  <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  <!-- /#page-content-wrapper -->
+</div>
+<footer>
+  <page-footer></page-footer>
+</footer>

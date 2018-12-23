@@ -1,0 +1,321 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('./assets/fonts/glyphicons-halflings-regular.eot');
+  src: url('./assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('./assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('./assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf')  format('truetype'),
+}
+
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  overflow: hidden;
+}
+html body .container-fluid.body-content {
+  position: absolute;
+  top: 56px;;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  font-family: 'Roboto Condensed', Fallback, sans-serif;
+  
+}
+/* TABLES */
+.table-bordered {
+    border: 1px solid #EBEBEB;
+  }
+  .table-bordered > thead > tr > th,
+  .table-bordered > thead > tr > td {
+    background-color: #F5F5F6;
+    border-bottom-width: 1px;
+  }
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td,
+  .table-bordered > tbody > tr > td,
+  .table-bordered > tfoot > tr > td {
+    border: 1px solid #e7e7e7;
+  }
+  .table > thead > tr > th {
+    border-bottom: 1px solid #DDDDDD;
+    vertical-align: bottom;
+  }
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    border-top: 1px solid #e7eaec;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+  }
+
+  /*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+
+/* Toggle Styles */
+
+#wrapper {
+  padding-right: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-right: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+  top: 56px;;
+  bottom: 30px;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #f4f4f4;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+  border-top: 1px dotted #e7e7e7;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #333;
+  background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(max-width:767px) {
+  #wrapper {
+      padding-right: 0;
+  }
+
+  #wrapper.toggled {
+      padding-right: 0;
+  }
+
+  #sidebar-wrapper {
+      width: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      width: 0;
+  }
+
+  #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+  }
+}
+
+@media(min-width:768px) {
+  #wrapper {
+      padding-right: 250px;
+  }
+
+  #wrapper.toggled {
+      padding-right: 0;
+  }
+
+  #sidebar-wrapper {
+      width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      width: 0;
+  }
+
+  #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+  }
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f4;
+    height: 29px;
+    border-top: 1px solid #e7e7e7;
+}
+.footer-padding {
+  padding: 0;
+  padding-right: 18px;  
+}
+.term-con a,
+.term-con span {
+  padding-left: 18px;
+  line-height: 30px;
+}
+.footer_area a:hover {
+  color: #1ab394;
+}
+
+a.no-padding{
+  padding: 0 !important;
+}
+a.no-padding:hover {
+  padding:0;
+}
+a.no-padding img{
+margin-top:3px;
+}
+
+@media (min-width: 768px) {
+  .site-title > .col-md-8 > span{
+  line-height: 56px;;
+  padding-left: 10px;
+  font-size: 2em;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-title > .col-md-8{
+    display: none;
+    visibility: hidden;
+    }
+}
+
+
+div.rounded-corner-widget{
+  border-radius: 5px;
+  border: 2px solid #999;
+  min-height: 200px;
+  background-color: #ffffff;  
+}
+.rounded-corner-widget>hr{
+  margin:0 5px;
+  border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .v-margin-small { margin: 5px 0;}	
+  .v-margin-normal { margin: 10px 0;}
+}
+@media (min-width: 768px) {
+	.v-margin-small { margin: 10px 0;}	
+ 	.v-margin-normal { margin: 15px 0;}
+}
+@media (min-width: 992px) {
+	.v-margin-small { margin: 15px 0;}	
+  	.v-margin-normal { margin: 20px 0;} 	
+}
+@media (min-width: 1200px) {
+	.v-margin-small { margin: 20px 0;}	
+  	.v-margin-normal { margin: 25px 0;}
+}
+
+.dropdown-toggle .icon-bars-button{
+  display: inline-block;
+  vertical-align:middle;
+}
+.dropdown-toggle .icon-bar {
+  margin-bottom:2px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
