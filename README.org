@@ -1,4 +1,4 @@
 * Continuous Deployment pipelines for Nodejs Angular5 - Docker project to Kubernetes
 This source code is part of article with above title at dzone. For further information please follow the link:
 
-<<tbd>>
+[[https://dzone.com/articles/cicd-pipelines-for-nodejs-docker-application-to-ku]]
